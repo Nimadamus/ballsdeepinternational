@@ -13,9 +13,12 @@ custom domain for free, which leaves the domain renewal as the only cost.
 
 Do this only once `ballsdeepinternational.com` is registered again:
 
-1. `git mv CNAME.pending CNAME` and push. GitHub Pages reads `CNAME` as the custom domain
-   and will fail its DNS check until the name actually resolves here, which is why it is
-   parked under a different filename until then.
+1. Already done. `CNAME` holds `ballsdeepinternational.com` and Pages is configured for it.
+   Until the name resolves here Pages simply serves nothing, which is deliberate: without
+   the CNAME this project page would have been served under
+   `www.betlegendpicks.com/ballsdeepinternational/`, because that is the custom domain on
+   the `nimadamus.github.io` user site, and this content does not belong under the betting
+   brand.
 2. At the registrar, point the apex at GitHub Pages:
    `A 185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`,
    and `CNAME www -> nimadamus.github.io`.
