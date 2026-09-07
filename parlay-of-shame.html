@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   The Parlay of Shame Wall | Balls Deep International
+  </title>
+<link rel="canonical" href="https://ballsdeepinternational.com/parlay-of-shame.html">
+  <meta content="A monument to the most catastrophic parlays in sports betting history. These aren't bad beats. These are life decisions." name="description"/>
+  <meta content="The Parlay of Shame Wall | Balls Deep International" property="og:title"/>
+  <meta content="A monument to the most catastrophic parlays in sports betting history. These aren't bad beats. These are life decisions." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://ballsdeepinternational.com/parlay-of-shame" property="og:url"/>
+  <meta content="https://ballsdeepinternational.com/BallsDeepLogo.png" property="og:image"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #111 50%, #0d0d0d 100%);
+            color: #e0e0e0;
+            font-family: 'Inter', Arial, sans-serif;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+            text-align: center;
+            padding: 30px 0 20px 0;
+            border-bottom: 3px solid gold;
+        }
+        .logo { max-width: 280px; margin-bottom: 15px; }
+        nav {
+            display: flex; justify-content: center; flex-wrap: wrap;
+            gap: 25px; margin-top: 15px; padding: 10px 20px;
+        }
+        nav a {
+            color: gold; text-decoration: none; font-size: 16px;
+            font-family: 'Sora', sans-serif; font-weight: 600;
+            letter-spacing: 1px; transition: all 0.3s ease;
+            padding: 5px 0; border-bottom: 2px solid transparent;
+        }
+        nav a:hover { color: #fff; border-bottom-color: gold; }
+        .page-header {
+            text-align: center; padding: 50px 20px 15px 20px;
+        }
+        .page-header h1 {
+            font-family: 'Sora', sans-serif; font-size: 42px;
+            color: gold; text-shadow: 0 0 30px rgba(255,215,0,0.3);
+        }
+        .page-header p {
+            color: #888; font-size: 16px; margin-top: 10px;
+            max-width: 700px; margin-left: auto; margin-right: auto;
+        }
+        .container {
+            max-width: 950px; margin: 30px auto 60px auto; padding: 0 20px;
+        }
+        .intro-box {
+            background: linear-gradient(145deg, #1a1a1a, #141414);
+            border: 2px solid #2a2a2a; border-radius: 16px;
+            padding: 30px 35px; margin-bottom: 40px;
+            border-left: 4px solid #ff4444;
+        }
+        .intro-box p {
+            font-size: 16px; line-height: 1.8; color: #d0d0d0; margin-bottom: 15px;
+        }
+        .intro-box p:last-child { margin-bottom: 0; }
+        .shame-card {
+            background: linear-gradient(145deg, #1a1a1a 0%, #141414 100%);
+            border: 2px solid #2a2a2a; border-radius: 16px;
+            margin-bottom: 35px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            transition: all 0.3s ease;
+        }
+        .shame-card:hover {
+            border-color: #444;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.6), 0 0 20px rgba(255,215,0,0.1);
+            transform: translateY(-2px);
+        }
+        .shame-header {
+            text-align: center; padding: 25px 30px 18px 30px;
+            border-bottom: 1px solid #2a2a2a;
+            background: linear-gradient(180deg, rgba(255,68,68,0.08) 0%, transparent 100%);
+        }
+        .shame-number {
+            font-family: 'Sora', sans-serif; font-size: 13px;
+            color: #ff4444; text-transform: uppercase;
+            letter-spacing: 3px; margin-bottom: 8px;
+        }
+        .shame-title {
+            font-family: 'Sora', sans-serif; font-size: 22px;
+            font-weight: 700; color: gold; line-height: 1.3;
+        }
+        .shame-body { padding: 25px 35px 30px 35px; }
+        .shame-body p {
+            font-size: 16px; line-height: 1.8; color: #d0d0d0; margin-bottom: 16px;
+        }
+        .shame-body p:last-child { margin-bottom: 0; }
+        .slip-box {
+            background: #0d0d0d; border: 1px solid #333; border-radius: 10px;
+            padding: 20px 25px; margin: 20px 0; font-family: 'Courier New', monospace;
+        }
+        .slip-box .leg {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 8px 0; border-bottom: 1px solid #222; font-size: 14px;
+        }
+        .slip-box .leg:last-child { border-bottom: none; }
+        .slip-box .leg .team { color: #e0e0e0; }
+        .slip-box .leg .result-win { color: #4ecdc4; font-weight: bold; }
+        .slip-box .leg .result-loss { color: #ff4444; font-weight: bold; }
+        .slip-total {
+            margin-top: 12px; padding-top: 12px; border-top: 2px solid gold;
+            display: flex; justify-content: space-between; font-size: 15px;
+        }
+        .slip-total .wager { color: #888; }
+        .slip-total .payout { color: gold; font-weight: bold; }
+        .damage-tag {
+            display: inline-block; background: rgba(255,68,68,0.15);
+            color: #ff6b6b; padding: 6px 16px; border-radius: 20px;
+            font-size: 13px; font-weight: 600; margin-top: 15px;
+            border: 1px solid rgba(255,68,68,0.3);
+        }
+        .moral {
+            background: rgba(255,215,0,0.05); border-left: 3px solid gold;
+            padding: 15px 20px; margin-top: 20px; border-radius: 0 8px 8px 0;
+        }
+        .moral p {
+            color: gold; font-style: italic; font-size: 15px; margin: 0;
+        }
+        .wall-plaque {
+            text-align: center; padding: 40px 20px; margin-top: 20px;
+            border-top: 2px solid #222;
+        }
+        .wall-plaque p {
+            color: #555; font-size: 14px; font-family: 'Sora', sans-serif;
+            letter-spacing: 1px;
+        }
+        footer {
+            text-align: center; padding: 30px; border-top: 2px solid #1a1a1a;
+            color: #444; font-size: 13px;
+        }
+        footer a { color: gold; text-decoration: none; }
+        @media (max-width: 600px) {
+            .page-header h1 { font-size: 28px; }
+            .shame-title { font-size: 18px; }
+            .shame-body { padding: 20px; }
+            nav { gap: 15px; }
+            nav a { font-size: 14px; }
+            .slip-box .leg { flex-direction: column; align-items: flex-start; gap: 4px; }
+        }
+  </style>
+  
+  <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <meta content="#000000" name="theme-color"/>
+  <meta content="strict-origin-when-cross-origin" name="referrer"/>
+  <meta content="Balls Deep International" property="og:site_name"/>
+  <meta content="en_US" property="og:locale"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="The Parlay of Shame Wall | Balls Deep International" name="twitter:title"/>
+  <meta content="A monument to the most catastrophic parlays in sports betting history. These aren't bad beats. These are life decisions." name="twitter:description"/>
+  <meta content="https://ballsdeepinternational.com/BallsDeepLogo.png" name="twitter:image"/>
+ </head>
+ <body>
+  <header>
+   <img alt="Balls Deep International" class="logo" decoding="async" loading="lazy" src="BallsDeepLogo.webp"/>
+   <nav>
+    <a href="/">
+     Home
+    </a>
+    <a href="/blog">
+     Blog
+    </a>
+    <a href="/handbook">
+     Handbook
+    </a>
+    <a href="/hr-complaints">
+     HR Complaints
+    </a>
+    <a href="/ceo-corner">
+     CEO's Corner
+    </a>
+    <a href="/meeting-minutes">
+     Meeting Minutes
+    </a>
+    <a href="/contact">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <div class="page-header">
+   <h1>
+    The Parlay of Shame Wall
+   </h1>
+   <p>
+    A permanent monument to the most catastrophic parlays in sports betting history. These aren't bad beats. These are life decisions.
+   </p>
+  </div>
+  <div class="container">
+   <div class="intro-box">
+    <p>
+     Welcome to the hallowed halls of financial ruin. Every parlay on this wall was a real bet, placed by a real person, with real money they probably needed for something else. Rent. Groceries. Their kid's braces. Instead, they put it on a 12-leg same-game parlay because they "had a feeling."
+    </p>
+    <p>
+     We don't judge here. We
+     <strong style="color:gold;">
+      memorialize
+     </strong>
+     . These brave soldiers didn't just lose money. They lost dignity, relationships, and in one documented case, a lease agreement. This is their monument. Their eternal flame. Except the flame is just their bankroll, and it's already out.
+    </p>
+   </div>
+   <!-- NEW SHAME ENTRY - January 30, 2026 -->
+   <div class="shame-card">
+    <div class="shame-header">
+     <div class="shame-number">
+      Exhibit G // January 30, 2026 // The Michigan Mistake
+     </div>
+     <div class="shame-title">
+      "It's Rivalry Week, I Can Feel It In My Bones"
+     </div>
+    </div>
+    <div class="shame-body">
+     <p>
+      Michigan versus Michigan State. A man sat down at 2 PM on a random Thursday and decided his entire emotional wellbeing for the next 96 hours would be determined by whether or not college students could put a ball through a hoop. He called his wife. He said "I'm about to do something." She said "Please don't." He did it anyway.
+     </p>
+     <p>
+      He built a 6-leg same-game parlay based entirely on "rivalry vibes" and a YouTube video from 2019 about "why Michigan State always plays up in big games." The video had 47 views. He found it compelling.
+     </p>
+     <div class="slip-box">
+      <div class="leg">
+       <span class="team">
+        Michigan State ML (+165)
+       </span>
+       <span class="result-loss">
+        PENDING
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Under 148.5 Total
+       </span>
+       <span class="result-loss">
+        PENDING
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        MSU +4.5 1H
+       </span>
+       <span class="result-loss">
+        PENDING
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Neither Team Scores 80+
+       </span>
+       <span class="result-loss">
+        PENDING
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Jett Howard Under 14.5 Points
+       </span>
+       <span class="result-loss">
+        PENDING
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Total Threes Under 16.5
+       </span>
+       <span class="result-loss">
+        PENDING
+       </span>
+      </div>
+      <div class="slip-total">
+       <span class="wager">
+        Wagered: $200
+       </span>
+       <span class="payout">
+        Would Pay: $11,840
+       </span>
+      </div>
+     </div>
+     <p>
+      He posted this to his group chat with the message "this is the one, boys." His group chat has heard "this is the one, boys" fourteen times since September. The lifetime record on "this is the one, boys" parlays is 0-14. Tonight will determine if it becomes 0-15 or if one man's vibes-based YouTube research finally pays off. His wife has already prepared a backup dinner conversation topic about literally anything else.
+     </p>
+     <span class="damage-tag">
+      Damage Status: Pending Catastrophe
+     </span>
+     <div class="moral">
+      <p>
+       "If this hits, I'm vindicated. If this loses, I'm still going to say 'the under was right there' for the next six weeks."
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- NEW SHAME ENTRY - January 30, 2026 -->
+   <div class="shame-card">
+    <div class="shame-header">
+     <div class="shame-number">
+      Exhibit H // January 30, 2026 // The Super Bowl Prophet
+     </div>
+     <div class="shame-title">
+      "I've Been Manifesting This Since Week 1"
+     </div>
+    </div>
+    <div class="shame-body">
+     <p>
+      In September, this woman told everyone at her office that she had a "feeling" about the Super Bowl. She wrote it on a sticky note and put it on her monitor. "Chiefs vs Eagles, Eagles win 31-27." She told her coworkers she was a "low-key psychic." She is not psychic. She is a paralegal from Cincinnati who watches football twice a year and picked the two teams she remembered from last year's Super Bowl.
+     </p>
+     <p>
+      She has now built an entire Super Bowl futures parlay based on this prophecy, which she has since upgraded to include prop bets she "received in a vision" during a particularly long Zoom meeting about quarterly compliance reviews.
+     </p>
+     <div class="slip-box">
+      <div class="leg">
+       <span class="team">
+        Eagles to Win Super Bowl (+600)
+       </span>
+       <span class="result-loss">
+        PENDING
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Jalen Hurts Super Bowl MVP (+750)
+       </span>
+       <span class="result-loss">
+        PENDING
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Eagles Exact Score 31-27 (+8500)
+       </span>
+       <span class="result-loss">
+        PENDING
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        First TD: Eagles RB (+1100)
+       </span>
+       <span class="result-loss">
+        PENDING
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Halftime Score Eagles Lead by 7+ (+450)
+       </span>
+       <span class="result-loss">
+        PENDING
+       </span>
+      </div>
+      <div class="slip-total">
+       <span class="wager">
+        Wagered: $100
+       </span>
+       <span class="payout">
+        Would Pay: $2,847,500
+       </span>
+      </div>
+     </div>
+     <p>
+      The potential payout is nearly $2.85 million. She has calculated this number seventeen times. She has a Google Doc titled "What I'll Do When The Parlay Hits" that is four pages long and includes a section called "People Who Doubted Me (For Later)." Her husband asked her what happens if it doesn't hit. She said "It's going to hit. I visualized it." He has started researching therapists who specialize in sports gambling adjacent delusions.
+     </p>
+     <span class="damage-tag">
+      Potential Damage: Reality-Altering
+     </span>
+     <div class="moral">
+      <p>
+       "I'm either going to be a millionaire or I'm going to have to explain to my whole office why my sticky note prophecy was wrong. There is no middle ground."
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- SHAME ENTRY 1 -->
+   <div class="shame-card">
+    <div class="shame-header">
+     <div class="shame-number">
+      Exhibit A // The Unforgivable
+     </div>
+     <div class="shame-title">
+      "I Just Need Steph to Hit One More Three"
+     </div>
+    </div>
+    <div class="shame-body">
+     <p>
+      This masterpiece came from a man who told his wife he was "investing in the market." Technically true, if you consider the sports betting market a legitimate financial institution, which it absolutely is not.
+     </p>
+     <p>
+      Seven legs. Seven confident decisions made during a commercial break. The first six hit like he had insider information from God himself. Steph Curry needed one more three-pointer in the fourth quarter to complete the sweep. He was 8-for-12 on the night. The man was already calculating how to explain a $14,000 deposit to his accountant.
+     </p>
+     <div class="slip-box">
+      <div class="leg">
+       <span class="team">
+        Warriors ML (-165)
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Curry Over 4.5 Threes
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Warriors -3.5
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Over 224.5 Total
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Curry Over 28.5 Points
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Wiggins Over 15.5 Points
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Curry Over 5.5 Threes
+       </span>
+       <span class="result-loss">
+        L
+       </span>
+      </div>
+      <div class="slip-total">
+       <span class="wager">
+        Wagered: $200
+       </span>
+       <span class="payout">
+        Would Have Paid: $14,280
+       </span>
+      </div>
+     </div>
+     <p>
+      Curry finished with exactly 5 threes. Five. Not five and a half. Not six. Five. He went 0-for-3 in the fourth quarter from deep while this man aged 15 years in real time. The Warriors won by 12. Every other leg hit. The universe specifically, deliberately, personally attacked this man.
+     </p>
+     <span class="damage-tag">
+      Emotional Damage: Catastrophic
+     </span>
+     <div class="moral">
+      <p>
+       "The market gave me six, and I asked for seven. That's not gambling. That's hubris. I'm basically Greek mythology now."
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- SHAME ENTRY 2 -->
+   <div class="shame-card">
+    <div class="shame-header">
+     <div class="shame-number">
+      Exhibit B // The Mathematician
+     </div>
+     <div class="shame-title">
+      "It's Statistically Impossible for All of These to Lose"
+     </div>
+    </div>
+    <div class="shame-body">
+     <p>
+      A self-described "numbers guy" who works in IT and swears he ran the probabilities through a Python script. He did not. He used the FanDuel parlay builder at 2 AM after four Modelo Especials and a Wikipedia article about expected value.
+     </p>
+     <p>
+      The thesis: pick the five biggest favorites of the night across three sports. "They're all -300 or better. The math literally cannot fail." The math, as it turns out, not only can fail but will do so in the most humiliating way conceivable.
+     </p>
+     <div class="slip-box">
+      <div class="leg">
+       <span class="team">
+        Chiefs ML (-400)
+       </span>
+       <span class="result-loss">
+        L
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Celtics ML (-350)
+       </span>
+       <span class="result-loss">
+        L
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Panthers ML (-300)
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Oilers ML (-320)
+       </span>
+       <span class="result-loss">
+        L
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Yankees ML (-280)
+       </span>
+       <span class="result-loss">
+        L
+       </span>
+      </div>
+      <div class="slip-total">
+       <span class="wager">
+        Wagered: $500
+       </span>
+       <span class="payout">
+        Would Have Paid: $1,180
+       </span>
+      </div>
+     </div>
+     <p>
+      Four of five favorites lost. On the same night. The Panthers, the only team that won, were playing against a squad missing their top three scorers. The one leg nobody was worried about was the only one that survived. His Python script, when later reviewed by a coworker, was just a grocery list with "import numpy" typed at the top.
+     </p>
+     <span class="damage-tag">
+      Ego Damage: Terminal
+     </span>
+     <div class="moral">
+      <p>
+       "I told everyone at work I had a system. Now I have a system for avoiding eye contact in the break room."
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- SHAME ENTRY 3 -->
+   <div class="shame-card">
+    <div class="shame-header">
+     <div class="shame-number">
+      Exhibit C // The Romance
+     </div>
+     <div class="shame-title">
+      "It's Our Anniversary, Baby. I'm Putting It All on Us."
+     </div>
+    </div>
+    <div class="shame-body">
+     <p>
+      A man placed a 4-leg parlay on his wedding anniversary as a "romantic gesture." Each leg represented something about their relationship. His wife's birthday (over 28.5 points for LeBron, because she turned 29). Their anniversary date (3.5-point spread, because it was March 5th). The year they met (over 215.5 total, which he rationalized as "close enough to 2015"). And their dog's name (Broncos ML, because the dog's name is Bronco).
+     </p>
+     <div class="slip-box">
+      <div class="leg">
+       <span class="team">
+        LeBron Over 28.5 Pts ("Her Birthday")
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Rams -3.5 ("Our Date")
+       </span>
+       <span class="result-loss">
+        L
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Total Over 215.5 ("The Year We Met")
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Broncos ML ("The Dog")
+       </span>
+       <span class="result-loss">
+        L
+       </span>
+      </div>
+      <div class="slip-total">
+       <span class="wager">
+        Wagered: $350
+       </span>
+       <span class="payout">
+        Would Have Paid: $4,900
+       </span>
+      </div>
+     </div>
+     <p>
+      He told his wife during dinner. She did not find it romantic. She found it "a perfect example of why we should probably go to couples counseling, Kevin." LeBron and the over came through, because even the basketball gods wanted this to hurt more. The dog, Bronco, reportedly showed no remorse. The Broncos lost by 17.
+     </p>
+     <span class="damage-tag">
+      Relationship Damage: Severe
+     </span>
+     <div class="moral">
+      <p>
+       "In hindsight, telling your wife you named a parlay leg after your dog during anniversary dinner is not the flex I thought it was."
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- SHAME ENTRY 4 -->
+   <div class="shame-card">
+    <div class="shame-header">
+     <div class="shame-number">
+      Exhibit D // The Revenge Parlay
+     </div>
+     <div class="shame-title">
+      "I Lost $800 Today So I'm Putting $400 on a 10-Legger to Get It Back"
+     </div>
+    </div>
+    <div class="shame-body">
+     <p>
+      The revenge parlay. The most dangerous weapon in the degenerate arsenal. This man lost $800 across six straight bets during the NFL Sunday early window. Rather than accept the loss, go for a walk, maybe call his mother, he decided the rational response was to put half of what he lost on a 10-leg parlay for the late games and Sunday Night Football.
+     </p>
+     <p>
+      "I just need to get back to even," he told his group chat. His group chat, which had already stopped responding after bet number four, offered no counsel. They were busy placing their own revenge parlays.
+     </p>
+     <div class="slip-box">
+      <div class="leg">
+       <span class="team">
+        Eagles ML
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Cowboys +3.5
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        49ers -6.5
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Over 47.5 (DEN/LV)
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Packers ML
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Under 43.5 (NYJ/NE)
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Cardinals +7
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Chargers -2.5
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Lions ML
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Lamar Over 245.5 Pass Yds
+       </span>
+       <span class="result-loss">
+        L
+       </span>
+      </div>
+      <div class="slip-total">
+       <span class="wager">
+        Wagered: $400
+       </span>
+       <span class="payout">
+        Would Have Paid: $38,400
+       </span>
+      </div>
+     </div>
+     <p>
+      Nine of ten legs hit. Lamar Jackson threw for 244 yards. Two hundred and forty-four. He needed one more completion. One more screen pass. One more anything. Instead, Lamar ran for 112 yards because Lamar Jackson does not care about your over. The man did not get back to even. He went from down $800 to down $1,200 and reportedly did not speak for the remainder of the evening.
+     </p>
+     <span class="damage-tag">
+      Financial Damage: Compounding
+     </span>
+     <div class="moral">
+      <p>
+       "The revenge parlay is just you telling the universe 'I didn't learn the first time, please teach me again, harder.'"
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- SHAME ENTRY 5 -->
+   <div class="shame-card">
+    <div class="shame-header">
+     <div class="shame-number">
+      Exhibit E // The Oracle
+     </div>
+     <div class="shame-title">
+      "I Had a Dream About This Exact Score"
+     </div>
+    </div>
+    <div class="shame-body">
+     <p>
+      She dreamed the final score would be 24-21. She told everyone at brunch. She showed them her dream journal, which was a Notes app entry from 3:47 AM that read "24-21 buffalo idk." Her friends, who should have been better friends, encouraged her to "trust the vision."
+     </p>
+     <p>
+      She bet the exact score. She bet the first half total. She bet the margin of victory. She built an entire 6-leg parlay around a dream she had after eating Thai food at midnight. The payout was going to be over twenty grand on a $50 bet.
+     </p>
+     <div class="slip-box">
+      <div class="leg">
+       <span class="team">
+        Bills Exact Score 24-21
+       </span>
+       <span class="result-loss">
+        L
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Bills Win by 3
+       </span>
+       <span class="result-loss">
+        L
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        First Half Over 21.5
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Josh Allen Over 2.5 TDs
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Bills -2.5
+       </span>
+       <span class="result-loss">
+        L
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Total Under 48.5
+       </span>
+       <span class="result-loss">
+        L
+       </span>
+      </div>
+      <div class="slip-total">
+       <span class="wager">
+        Wagered: $50
+       </span>
+       <span class="payout">
+        Would Have Paid: $22,150
+       </span>
+      </div>
+     </div>
+     <p>
+      The final score was 31-28. Not only was it not 24-21, it wasn't even close to the genre of 24-21. The Bills won, but by the wrong amount, in the wrong way, with the wrong total. Her dream was technically a nightmare. She has since stopped eating Pad See Ew after 10 PM, but not because of the gambling. She just doesn't like the dreams anymore.
+     </p>
+     <span class="damage-tag">
+      Spiritual Damage: Existential
+     </span>
+     <div class="moral">
+      <p>
+       "My subconscious is not a handicapper. I need to stop treating REM sleep like it's a sportsbook consulting firm."
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- SHAME ENTRY 6 -->
+   <div class="shame-card">
+    <div class="shame-header">
+     <div class="shame-number">
+      Exhibit F // The Company Man
+     </div>
+     <div class="shame-title">
+      "I Placed This During the All-Hands Meeting"
+     </div>
+    </div>
+    <div class="shame-body">
+     <p>
+      While his VP of Engineering was presenting Q4 revenue targets, this legend was constructing a same-game parlay under the conference table. His screen was reflected in the glass partition behind him. Three people saw. Nobody said anything. This is America.
+     </p>
+     <p>
+      He built the parlay in exactly the time it took his VP to explain "synergistic cross-functional deliverables," which was about four minutes. He hit submit right as someone asked him a direct question about sprint velocity. He answered "bullish" and it somehow worked.
+     </p>
+     <div class="slip-box">
+      <div class="leg">
+       <span class="team">
+        Nuggets ML (-180)
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Jokic Over 10.5 Rebounds
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Jokic Over 8.5 Assists
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Murray Over 22.5 Points
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Nuggets -4.5
+       </span>
+       <span class="result-win">
+        W
+       </span>
+      </div>
+      <div class="leg">
+       <span class="team">
+        Jokic Triple Double (Yes)
+       </span>
+       <span class="result-loss">
+        L (9 assists)
+       </span>
+      </div>
+      <div class="slip-total">
+       <span class="wager">
+        Wagered: $150
+       </span>
+       <span class="payout">
+        Would Have Paid: $9,750
+       </span>
+      </div>
+     </div>
+     <p>
+      Jokic had 9 assists. Nine. He needed one more in the final four minutes and Denver decided to run isolation plays for the rest of the game. This man watched it happen during a 1-on-1 with his manager, who noticed he was "unusually distracted" and "made a sound like a deflating balloon" at 9:47 PM Eastern during their async Slack call.
+     </p>
+     <span class="damage-tag">
+      Professional Damage: Under Review
+     </span>
+     <div class="moral">
+      <p>
+       "My performance review said I need to 'demonstrate more focus in collaborative settings.' They have no idea."
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="wall-plaque">
+    <p style="color: gold; font-size: 18px; margin-bottom: 10px;">
+     THIS WALL IS NEVER FINISHED
+    </p>
+    <p>
+     New exhibits are added as the wreckage accumulates. If you have a parlay that belongs here, you already know it does. The shame is the admission fee.
+    </p>
+    <p style="margin-top: 20px; color: #333; font-size: 12px;">
+     Balls Deep International is not responsible for any emotional distress caused by reading this page. If you recognized yourself in any of these entries, please close this tab and call someone who loves you.
+    </p>
+   </div>
+  </div>
+  <footer>
+   <p>
+    © 2026
+    <a href="/">
+     Balls Deep International
+    </a>
+    . All rights reserved. No parlays were harmed in the making of this page. They were already dead.
+   </p>
+   <p>
+    Satire, commentary, and fictionalized storytelling. Not betting advice, investment advice, or a substitute for adult supervision.
+   </p>
+   <p>
+    <a href="/disclaimer">
+     Disclaimer
+    </a>
+    |
+    <a href="/privacy">
+     Privacy
+    </a>
+    |
+    <a href="/terms">
+     Terms
+    </a>
+    |
+    <a href="/responsible-gambling">
+     Responsible Gambling
+    </a>
+   </p>
+  </footer>
+ </body>
+</html>

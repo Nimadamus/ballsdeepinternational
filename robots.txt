@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /new_blog_posts
+
+Sitemap: https://ballsdeepinternational.com/sitemap.xml

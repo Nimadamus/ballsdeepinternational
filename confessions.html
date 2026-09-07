@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Anonymous Confessions | Balls Deep International
+  </title>
+<link rel="canonical" href="https://ballsdeepinternational.com/confessions.html">
+  <meta content="Anonymous confessions from the trenches of sports betting degeneracy. Names withheld. Dignity already lost." name="description"/>
+  <meta content="Anonymous Confessions | Balls Deep International" property="og:title"/>
+  <meta content="Anonymous confessions from the trenches of sports betting degeneracy. Names withheld. Dignity already lost." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://ballsdeepinternational.com/confessions" property="og:url"/>
+  <meta content="https://ballsdeepinternational.com/BallsDeepLogo.png" property="og:image"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #111 50%, #0d0d0d 100%);
+            color: #e0e0e0;
+            font-family: 'Inter', Arial, sans-serif;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+            text-align: center;
+            padding: 30px 0 20px 0;
+            border-bottom: 3px solid gold;
+        }
+        .logo { max-width: 280px; margin-bottom: 15px; }
+        nav {
+            display: flex; justify-content: center; flex-wrap: wrap;
+            gap: 25px; margin-top: 15px; padding: 10px 20px;
+        }
+        nav a {
+            color: gold; text-decoration: none; font-size: 16px;
+            font-family: 'Sora', sans-serif; font-weight: 600;
+            letter-spacing: 1px; transition: all 0.3s ease;
+            padding: 5px 0; border-bottom: 2px solid transparent;
+        }
+        nav a:hover { color: #fff; border-bottom-color: gold; }
+        .page-header {
+            text-align: center; padding: 50px 20px 15px 20px;
+        }
+        .page-header h1 {
+            font-family: 'Sora', sans-serif; font-size: 42px;
+            color: gold; text-shadow: 0 0 30px rgba(255,215,0,0.3);
+        }
+        .page-header p {
+            color: #888; font-size: 16px; margin-top: 10px;
+            max-width: 700px; margin-left: auto; margin-right: auto;
+        }
+        .container {
+            max-width: 950px; margin: 30px auto 60px auto; padding: 0 20px;
+        }
+        .intro-box {
+            background: linear-gradient(145deg, #1a1a1a, #141414);
+            border: 2px solid #2a2a2a; border-radius: 16px;
+            padding: 30px 35px; margin-bottom: 40px;
+            border-left: 4px solid #ff69b4;
+        }
+        .intro-box p {
+            font-size: 16px; line-height: 1.8; color: #d0d0d0; margin-bottom: 15px;
+        }
+        .intro-box p:last-child { margin-bottom: 0; }
+        .confession-card {
+            background: linear-gradient(145deg, #1a1a1a 0%, #141414 100%);
+            border: 2px solid #2a2a2a; border-radius: 16px;
+            margin-bottom: 30px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .confession-card:hover {
+            border-color: #444;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.6), 0 0 15px rgba(255,105,180,0.1);
+            transform: translateY(-2px);
+        }
+        .confession-header {
+            padding: 20px 30px 15px 30px;
+            border-bottom: 1px solid #2a2a2a;
+            display: flex; justify-content: space-between; align-items: center;
+            background: linear-gradient(180deg, rgba(255,105,180,0.05) 0%, transparent 100%);
+        }
+        .confession-id {
+            font-family: 'Courier New', monospace; font-size: 13px;
+            color: #ff69b4; letter-spacing: 1px;
+        }
+        .confession-sport {
+            font-size: 12px; color: #555; text-transform: uppercase;
+            letter-spacing: 2px; font-family: 'Sora', sans-serif;
+        }
+        .confession-body {
+            padding: 25px 35px 30px 35px;
+        }
+        .confession-text {
+            font-size: 18px; line-height: 1.9; color: #e0e0e0;
+            font-style: italic; margin-bottom: 20px;
+            position: relative; padding-left: 25px;
+        }
+        .confession-text::before {
+            content: '"'; position: absolute; left: -5px; top: -10px;
+            font-size: 50px; color: rgba(255,105,180,0.3);
+            font-family: Georgia, serif;
+        }
+        .confession-context {
+            font-size: 14px; line-height: 1.7; color: #888;
+            padding-top: 15px; border-top: 1px solid #1f1f1f;
+        }
+        .reaction-bar {
+            display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap;
+        }
+        .reaction {
+            background: #0d0d0d; border: 1px solid #2a2a2a;
+            padding: 6px 14px; border-radius: 20px;
+            font-size: 13px; color: #888;
+            display: flex; align-items: center; gap: 6px;
+        }
+        /* .count class removed - no engagement counts */
+        .sin-level {
+            display: inline-block; padding: 5px 14px; border-radius: 20px;
+            font-size: 12px; font-weight: 600; margin-top: 12px;
+            letter-spacing: 1px;
+        }
+        .sin-venial {
+            background: rgba(78,205,196,0.15); color: #4ecdc4;
+            border: 1px solid rgba(78,205,196,0.3);
+        }
+        .sin-mortal {
+            background: rgba(255,68,68,0.15); color: #ff6b6b;
+            border: 1px solid rgba(255,68,68,0.3);
+        }
+        .sin-cardinal {
+            background: rgba(255,0,0,0.2); color: #ff3333;
+            border: 1px solid rgba(255,0,0,0.4);
+        }
+        .sin-legendary {
+            background: rgba(255,215,0,0.15); color: gold;
+            border: 1px solid rgba(255,215,0,0.3);
+        }
+        .closing-box {
+            text-align: center; padding: 40px 20px; margin-top: 20px;
+            border-top: 2px solid #222;
+        }
+        .closing-box p {
+            color: #555; font-size: 14px; font-family: 'Sora', sans-serif;
+            letter-spacing: 1px; max-width: 600px; margin: 0 auto;
+        }
+        footer {
+            text-align: center; padding: 30px; border-top: 2px solid #1a1a1a;
+            color: #444; font-size: 13px;
+        }
+        footer a { color: gold; text-decoration: none; }
+        @media (max-width: 600px) {
+            .page-header h1 { font-size: 28px; }
+            .confession-text { font-size: 16px; padding-left: 20px; }
+            .confession-body { padding: 20px; }
+            .confession-header { flex-direction: column; gap: 5px; align-items: flex-start; }
+            nav { gap: 15px; }
+            nav a { font-size: 14px; }
+        }
+  </style>
+  
+  <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <meta content="#000000" name="theme-color"/>
+  <meta content="strict-origin-when-cross-origin" name="referrer"/>
+  <meta content="Balls Deep International" property="og:site_name"/>
+  <meta content="en_US" property="og:locale"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Anonymous Confessions | Balls Deep International" name="twitter:title"/>
+  <meta content="Anonymous confessions from the trenches of sports betting degeneracy. Names withheld. Dignity already lost." name="twitter:description"/>
+  <meta content="https://ballsdeepinternational.com/BallsDeepLogo.png" name="twitter:image"/>
+ </head>
+ <body>
+  <header>
+   <img alt="Balls Deep International" class="logo" decoding="async" loading="lazy" src="BallsDeepLogo.webp"/>
+   <nav>
+    <a href="/">
+     Home
+    </a>
+    <a href="/blog">
+     Blog
+    </a>
+    <a href="/handbook">
+     Handbook
+    </a>
+    <a href="/hr-complaints">
+     HR Complaints
+    </a>
+    <a href="/ceo-corner">
+     CEO's Corner
+    </a>
+    <a href="/meeting-minutes">
+     Meeting Minutes
+    </a>
+    <a href="/contact">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <div class="page-header">
+   <h1>
+    Anonymous Confessions
+   </h1>
+   <p>
+    From the trenches of sports betting degeneracy. Names withheld. Dignity already lost.
+   </p>
+  </div>
+  <div class="container">
+   <div class="intro-box">
+    <p>
+     What you're about to read are real confessions submitted anonymously by real degenerates. We asked our community one simple question:
+     <strong style="color:#ff69b4;">
+      "What's the worst thing sports betting has made you do?"
+     </strong>
+    </p>
+    <p>
+     The responses were immediate, numerous, and deeply concerning. We have not edited these for content, only for length and identifying details. If you see yourself in any of these, just know: you're not alone. You're surrounded by equally questionable people. That's not comfort. That's a warning.
+    </p>
+   </div>
+   <!-- NEW CONFESSION - January 30, 2026 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #011 | JANUARY 30, 2026
+     </span>
+     <span class="confession-sport">
+      NCAAB
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      I have told my coworkers I'm "really into college basketball analytics" to explain why I know that Toledo is 14-7-1 ATS on the road when playing on three days rest against MAC opponents in February. I am not into analytics. I am into making $75 bets on Tuesday night Toledo games while my family thinks I'm working late. My wife asked me who my favorite college team was last week. I panicked and said "the Zips." She asked what a Zip was. I said "it's from Ohio" and changed the subject. I have bet on Akron seventeen times this season. I could not point to Akron on a map without GPS assistance.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, 38, claims to have a "healthy interest in amateur athletics" while explaining his DraftKings notification sounds as "work emails."
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       What's a Zip
+      </span>
+      <span class="reaction">
+       MAC Degen
+      </span>
+      <span class="reaction">
+       Toledo Tuesday
+      </span>
+     </div>
+     <span class="sin-level sin-mortal">
+      Sin Level: Mortal (But At Least You Know The Spread)
+     </span>
+    </div>
+   </div>
+   <!-- NEW CONFESSION - January 30, 2026 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #012 | JANUARY 30, 2026
+     </span>
+     <span class="confession-sport">
+      SUPER BOWL
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      Last year I hosted a Super Bowl party specifically so I could bet on the props without my wife noticing. I told her I was "just excited about the commercials." I was not excited about the commercials. I was excited because I had Usher's opening song under 3 minutes and the over on Gatorade shower color being orange. I spent the entire halftime show in the bathroom "fixing the toilet" which was code for refreshing my FanDuel app. The toilet was fine. I was not fine. Usher opened with a 4-minute medley and the Gatorade was purple. I emerged from the bathroom and my buddy asked why I looked "pale and broken." I said the bean dip wasn't sitting right. The bean dip was fine. My bankroll was not fine.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, 33, currently planning another Super Bowl party this year "for the vibes" while already researching Kendrick Lamar setlist predictions.
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       Halftime Bathroom
+      </span>
+      <span class="reaction">
+       Gatorade Purple
+      </span>
+      <span class="reaction">
+       Bean Dip Alibi
+      </span>
+     </div>
+     <span class="sin-level sin-cardinal">
+      Sin Level: Cardinal (The Bathroom Knows)
+     </span>
+    </div>
+   </div>
+   <!-- NEW CONFESSION - January 30, 2026 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #013 | JANUARY 30, 2026
+     </span>
+     <span class="confession-sport">
+      NHL
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      I bought a Connor McDavid jersey even though I have never watched a full Edmonton Oilers game in my life. I just need people to think I'm a "real hockey fan" when I'm screaming at the TV during his player props. My girlfriend asked me to name three other Oilers. I said "the goalie, the other guy, and probably someone named Johnson." There is no one named Johnson on the Oilers. She Googled it. She showed me there's no Johnson. I told her he must have gotten traded. He was never there, because he doesn't exist, because I invented a human being to cover up the fact that I only know McDavid because he hits overs like it's his second job. I have now memorized three actual Oilers names to avoid future incidents. I will forget them by March.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, 27, owns a $250 McDavid jersey, has bet on McDavid point props 34 times this season, and cannot pronounce "Draisaitl" correctly despite trying four times during this confession submission.
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       Who's Johnson
+      </span>
+      <span class="reaction">
+       Draisaitl
+      </span>
+      <span class="reaction">
+       Prop Jersey
+      </span>
+     </div>
+     <span class="sin-level sin-legendary">
+      Sin Level: Legendary (Johnson Would Be Proud)
+     </span>
+    </div>
+   </div>
+   <!-- CONFESSION 1 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #001
+     </span>
+     <span class="confession-sport">
+      NFL
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      I told my wife I was going to Home Depot. I drove to Home Depot. I sat in the Home Depot parking lot for three hours watching the Sunday afternoon games on my phone. I came home with nothing from Home Depot. She asked where the shelf brackets were. I said they were out of stock. I have done this four Sundays in a row. I don't even know what shelf she's talking about anymore.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, 34, married, claims to be "handy around the house" despite not owning a level.
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       Same
+      </span>
+      <span class="reaction">
+       Concerned
+      </span>
+      <span class="reaction">
+       King
+      </span>
+     </div>
+     <span class="sin-level sin-mortal">
+      Sin Level: Mortal
+     </span>
+    </div>
+   </div>
+   <!-- CONFESSION 2 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #002
+     </span>
+     <span class="confession-sport">
+      NBA
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      I have a burner phone exclusively for sports betting apps. My real phone has zero betting apps on it. When my girlfriend checks my phone, it's clean. The burner is in a sock drawer, inside a sock, inside another sock. I pay for a separate phone plan for this. The monthly cost of maintaining this deception is more than most of my bets. I am paying $45 a month to lose $200 a month in secret. The economics of this are not in my favor.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, 28, in a relationship for 3 years. His girlfriend thinks he "doesn't really gamble."
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       Same
+      </span>
+      <span class="reaction">
+       Down Bad
+      </span>
+      <span class="reaction">
+       Seek Help
+      </span>
+     </div>
+     <span class="sin-level sin-cardinal">
+      Sin Level: Cardinal
+     </span>
+    </div>
+   </div>
+   <!-- CONFESSION 3 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #003
+     </span>
+     <span class="confession-sport">
+      NHL
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      I am a grown adult who has cried twice in the past five years. Both times were because of hockey parlays. Not funerals. Not movies. Not my daughter's birth (I was stoic and supportive). Hockey parlays. The first time, the Avalanche blew a 4-1 lead in the third period. The second time, there was an empty-net goal with 8 seconds left that pushed the total over by half a point. I cried in my car both times. The steering wheel knows things about me that no human ever will.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, 41, father of two. Described himself as "emotionally stable in all other areas of life."
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       Felt This
+      </span>
+      <span class="reaction">
+       Brother
+      </span>
+      <span class="reaction">
+       The Steering Wheel
+      </span>
+     </div>
+     <span class="sin-level sin-venial">
+      Sin Level: Venial (The Steering Wheel Absolves You)
+     </span>
+    </div>
+   </div>
+   <!-- CONFESSION 4 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #004
+     </span>
+     <span class="confession-sport">
+      NCAAB
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      During March Madness I called in sick to work for three consecutive days. My boss asked what was wrong. I said I had the flu. What I had was a 16-team bracket parlay and a complete inability to function as a contributing member of society while basketball was being played. I watched games from 12 PM to midnight. I ate cereal for every meal. On day two I moved a TV into the bathroom so I wouldn't miss the end of the Gonzaga game. I lost every bet. I went back to work on Thursday and my coworker said I "looked terrible." I looked exactly how I felt.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, 31, described his March Madness routine as "an annual spiritual pilgrimage" and his boss as "understanding but suspicious."
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       Legend
+      </span>
+      <span class="reaction">
+       TV in Bathroom
+      </span>
+      <span class="reaction">
+       March Sadness
+      </span>
+     </div>
+     <span class="sin-level sin-legendary">
+      Sin Level: Legendary
+     </span>
+    </div>
+   </div>
+   <!-- CONFESSION 5 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #005
+     </span>
+     <span class="confession-sport">
+      NFL
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      I have memorized the schedule of every NFL team not because I love football, but because I need to know when back-to-backs and short weeks happen for betting purposes. I can tell you that the Bills play on Thursday after a Sunday road game in Week 11, but I cannot tell you my mother-in-law's birthday. My wife tested me on this. I failed the birthday and nailed the Bills schedule. She asked me to "reconsider my priorities." I told her the Bills were 8-3 ATS on short rest since 2022. She left the room.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, 37, claims his marriage is "fine" but defined "fine" as "she hasn't changed the Netflix password yet."
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       Married Degen
+      </span>
+      <span class="reaction">
+       Same
+      </span>
+      <span class="reaction">
+       Pray for Her
+      </span>
+     </div>
+     <span class="sin-level sin-mortal">
+      Sin Level: Mortal
+     </span>
+    </div>
+   </div>
+   <!-- CONFESSION 6 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #006
+     </span>
+     <span class="confession-sport">
+      MLB
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      I once bet on a Tuesday afternoon Royals-Guardians game. Not because I had any opinion on the matchup. Not because I saw value. Not because someone tipped me off. I bet on it because I was bored at 1:10 PM on a Tuesday and the game existed. That's it. That was the entire analysis. "This game is happening and I am alive to bet on it." I lost $75 on a game I didn't watch, between two teams I don't care about, on a random Tuesday in June. I don't even remember who won. I just know it wasn't me.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, 26, described the experience as "a perfect metaphor for my twenties."
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       Tuesday Degen
+      </span>
+      <span class="reaction">
+       Most Honest Thing Ever Written
+      </span>
+      <span class="reaction">
+       Royals-Guardians
+      </span>
+     </div>
+     <span class="sin-level sin-venial">
+      Sin Level: Venial (We've All Done This)
+     </span>
+    </div>
+   </div>
+   <!-- CONFESSION 7 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #007
+     </span>
+     <span class="confession-sport">
+      MULTI-SPORT
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      I have a spreadsheet tracking every bet I've ever placed. It has 2,847 entries. It is the most organized thing in my life. My taxes are a disaster. My apartment looks like a crime scene. I haven't been to the dentist in two years. But my betting spreadsheet has color-coded columns, conditional formatting, pivot tables, and a dashboard that auto-calculates my ROI by sport, by month, and by day of the week. My overall ROI is negative 11.3%. I know this to the decimal. I have never applied this level of analytical rigor to anything that actually matters.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, 33, works in data analytics professionally. Described the spreadsheet as "the most beautiful thing I've ever created" and his apartment as "a situation."
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       The Spreadsheet
+      </span>
+      <span class="reaction">
+       -11.3%
+      </span>
+      <span class="reaction">
+       Go to the Dentist
+      </span>
+     </div>
+     <span class="sin-level sin-legendary">
+      Sin Level: Legendary (The Spreadsheet Deserves Its Own Page)
+     </span>
+    </div>
+   </div>
+   <!-- CONFESSION 8 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #008
+     </span>
+     <span class="confession-sport">
+      NBA
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      I once got into an argument with a stranger at a bar because he said Jokic "wasn't that good." I don't care about Jokic as a basketball player. I care about Jokic as a prop machine. That man has hit more overs for me than any athlete in the history of my betting career. When this stranger disrespected Jokic, he wasn't just disrespecting a basketball player. He was disrespecting my revenue stream. I got heated. I showed him Jokic's assist numbers on my phone. He asked me to leave him alone. I did not leave him alone. My friend had to physically walk me outside. I am not proud of this, but I am also not sorry.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, 29. Has a Jokic jersey despite being "not really a Nuggets fan." Described Jokic as "not a player, but a lifestyle."
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       Jokic Gang
+      </span>
+      <span class="reaction">
+       Revenue Stream
+      </span>
+      <span class="reaction">
+       Unhinged
+      </span>
+     </div>
+     <span class="sin-level sin-mortal">
+      Sin Level: Mortal (But Jokic Would Understand)
+     </span>
+    </div>
+   </div>
+   <!-- CONFESSION 9 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #009
+     </span>
+     <span class="confession-sport">
+      NFL
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      My therapist asked me what brings me joy. I said "when the under hits." She wrote something down. She wrote a lot down, actually. She asked me if I had hobbies outside of gambling. I said I also watch the games I don't bet on. She asked if there was anything else. I thought about it for a long time and said "sometimes I also check the injury reports." She recommended we increase our sessions to twice a week. I said I couldn't afford it. She asked where my money goes. I changed the subject. We both knew where the money goes.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, 36. Currently seeing a therapist "for unrelated reasons" that are, by all evidence, extremely related reasons.
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       Pain
+      </span>
+      <span class="reaction">
+       She Knows
+      </span>
+      <span class="reaction">
+       The Under Hits Different
+      </span>
+     </div>
+     <span class="sin-level sin-cardinal">
+      Sin Level: Cardinal
+     </span>
+    </div>
+   </div>
+   <!-- CONFESSION 10 -->
+   <div class="confession-card">
+    <div class="confession-header">
+     <span class="confession-id">
+      CONFESSION #010
+     </span>
+     <span class="confession-sport">
+      ALL SPORTS
+     </span>
+    </div>
+    <div class="confession-body">
+     <div class="confession-text">
+      I am currently reading this page instead of working. I have three open bets right now. One of them is on a women's tennis match in a country I've never heard of. I don't know either player's name. I picked the one whose name was shorter because I was in a hurry. I am betting $25 on a tennis match at 2 PM on a Wednesday played by someone whose name I cannot pronounce in a tournament I did not know existed until nine minutes ago. This is who I am now. This is who we all are now. And I'm fine with it. I think.
+     </div>
+     <div class="confession-context">
+      Submitted by: Anonymous, age undisclosed, currently at work. Described his current state as "functioning but only technically."
+     </div>
+     <div class="reaction-bar">
+      <span class="reaction">
+       Currently Me
+      </span>
+      <span class="reaction">
+       Wednesday Tennis
+      </span>
+      <span class="reaction">
+       We Are All This Person
+      </span>
+     </div>
+     <span class="sin-level sin-legendary">
+      Sin Level: Legendary (This Is the Final Boss of Confessions)
+     </span>
+    </div>
+   </div>
+   <div class="closing-box">
+    <p style="color: gold; font-size: 18px; margin-bottom: 15px;">
+     THE CONFESSIONAL IS ALWAYS OPEN
+    </p>
+    <p>
+     New confessions are accepted on a rolling basis. Anonymity is guaranteed because honestly, nobody wants credit for any of this. If you have a confession that belongs here, you already know it does. The only requirement is honesty. And we both know you're better at being honest about gambling than about anything else in your life.
+    </p>
+    <p style="margin-top: 20px; color: #333; font-size: 12px;">
+     Balls Deep International reminds you that if any of these confessions hit uncomfortably close to home, the National Problem Gambling Helpline is 1-800-522-4700. They're open 24/7, which is convenient because so are most sportsbook apps.
+    </p>
+   </div>
+  </div>
+  <footer>
+   <p>
+    © 2026
+    <a href="/">
+     Balls Deep International
+    </a>
+    . All confessions are anonymous, voluntary, and deeply alarming. We are not therapists. We are the reason you need one.
+   </p>
+   <p>
+    Satire, commentary, and fictionalized storytelling. Not betting advice, investment advice, or a substitute for adult supervision.
+   </p>
+   <p>
+    <a href="/disclaimer">
+     Disclaimer
+    </a>
+    |
+    <a href="/privacy">
+     Privacy
+    </a>
+    |
+    <a href="/terms">
+     Terms
+    </a>
+    |
+    <a href="/responsible-gambling">
+     Responsible Gambling
+    </a>
+   </p>
+  </footer>
+ </body>
+</html>

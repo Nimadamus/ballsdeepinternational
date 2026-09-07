@@ -1,0 +1,25 @@
+# START Master Redirect Rules
+RewriteEngine On
+
+# Force WWW and HTTPS
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://www.ballsdeepinternational.com/%1%{REQUEST_URI} [L,R=301]
+
+# Redirect index.html to root
+RewriteRule ^index\.html$ / [R=301,L]
+
+# END Master Redirect Rules
+
+# START 404 Error Fixes
+Redirect 301 /gapes_ai_girls https://www.ballsdeepinternational.com/
+Redirect 301 /gapes-ai-girls https://www.ballsdeepinternational.com/
+Redirect 301 /ai-women https://www.ballsdeepinternational.com/
+Redirect 301 /ai-women.html https://www.ballsdeepinternational.com/
+Redirect 301 /index_home_final https://www.ballsdeepinternational.com/
+Redirect 301 /index_home_final.html https://www.ballsdeepinternational.com/
+Redirect 301 /index_final https://www.ballsdeepinternational.com/
+Redirect 301 /index_final.html https://www.ballsdeepinternational.com/
+Redirect 301 /about.html https://www.ballsdeepinternational.com/
+# END 404 Error Fixes
